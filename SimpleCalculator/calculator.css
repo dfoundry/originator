@@ -55,56 +55,6 @@
     width: 100px;
 }
 
-
-/* re-order button */
-.button-number--zero {
-    order: 9;
-}
-
-.button-number--one {
-    order: 6;
-}
-
-.button-number--two {
-    order: 7;
-}
-
-.button-number--three {
-    order: 8;
-}
-
-.button-number--four {
-    order: 3;
-}
-
-.button-number--five {
-    order: 4;
-}
-
-.button-number--six {
-    order: 5;
-}
-
-.button-number--seven {
-    order: 0;
-}
-
-.button-number--eight {
-    order: 1;
-}
-
-.button-number--nine {
-    order: 2;
-}
-
-.button-number--dot {
-    order: 10;
-}
-
-.button-number--equal {
-    order: 11;
-}
-
 [class^="button-number--"] {
     background-color: #f0f0f0;
     border-radius: 12px;
@@ -131,9 +81,6 @@
     background-color: #6ab1de;
     transform: scale(.9);
 }
-
-
-
 
 [class^="button-operator--"] {
     background-color: #798eff;
