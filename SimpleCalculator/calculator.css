@@ -1,0 +1,156 @@
+.containner {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-warpper {
+    width: 380px;
+}
+
+.calculator-display__wrapper {
+    background-color: #71460c;
+    border-top-left-radius: 30px;
+}
+
+.calculator-display {
+    background-color: #343434;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    width: 380px;
+    justify-content: center;
+    height: 100px;
+    padding-top: 40px;
+}
+
+.calculator-display__input {
+    width: 344px;
+    font-size: 4em;
+    text-align: right;
+    border-radius: 8px
+}
+
+.calculator-button {
+    display: flex;
+    width: 360px;
+    background-color: #495865;
+    padding: 10px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.calculator-button__number {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 300px;
+}
+
+.calculator-button__operator {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 100px;
+}
+
+
+/* re-order button */
+.button-number--zero {
+    order: 9;
+}
+
+.button-number--one {
+    order: 6;
+}
+
+.button-number--two {
+    order: 7;
+}
+
+.button-number--three {
+    order: 8;
+}
+
+.button-number--four {
+    order: 3;
+}
+
+.button-number--five {
+    order: 4;
+}
+
+.button-number--six {
+    order: 5;
+}
+
+.button-number--seven {
+    order: 0;
+}
+
+.button-number--eight {
+    order: 1;
+}
+
+.button-number--nine {
+    order: 2;
+}
+
+.button-number--dot {
+    order: 10;
+}
+
+.button-number--equal {
+    order: 11;
+}
+
+[class^="button-number--"] {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    width: 80px;
+    height: 60px;
+    font-size: 3em;
+    border: none;
+    margin: 4px;
+    transition: all .3s;
+}
+
+    .button-number--zero {
+        width: 168px;
+    }
+    .button-number--equal {
+        width: 256px;
+    }
+
+[class^="button-number--"]:hover {
+    background-color: #cad0d1;
+}
+
+[class^="button-number--"]:active {
+    background-color: #6ab1de;
+    transform: scale(.9);
+}
+
+
+
+
+[class^="button-operator--"] {
+    background-color: #798eff;
+    border-radius: 12px;
+    width: 80px;
+    height: 60px;
+    font-size: 3em;
+    border: none;
+    margin: 4px;
+    transition: all .3s;
+}
+
+[class^="button-operator--"]:hover {
+    background-color: #91bfe8;
+}
+
+[class^="button-operator--"]:active {
+    background-color: #7a50c9;
+    transform: scale(.9);
+}

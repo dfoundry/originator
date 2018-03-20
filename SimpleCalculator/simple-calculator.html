@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   <div class="containner">
+        <div class="calculator-warpper">
+            <div class="calculator-display">
+               <div class="calculator-display__warpper">
+                    <input type="text" id="input-box" class="calculator-display__input" value="">
+                </div>
+            </div>
+            <div class="calculator-button">
+                <div class="calculator-button__number">
+                    <button class="button-number--zero" onclick="addInput('0')">0</button>
+                    <button class="button-number--one" onclick="addInput('1')">1</button>
+                    <button class="button-number--two" onclick="addInput('2')">2</button>
+                    <button class="button-number--three" onclick="addInput('3')">3</button>
+                    <button class="button-number--four" onclick="addInput('4')">4</button>
+                    <button class="button-number--five" onclick="addInput('5')">5</button>
+                    <button class="button-number--six" onclick="addInput('6')">6</button>
+                    <button class="button-number--seven" onclick="addInput('7')">7</button>
+                    <button class="button-number--eight" onclick="addInput('8')">8</button>
+                    <button class="button-number--nine" onclick="addInput('9')">9</button>
+                    <button class="button-number--dot" onclick="addInput('.')">.</button>
+                    <button class="button-number--equal" onclick="compute()">=</button>
+                </div>
+                <div class="calculator-button__operator">
+                    <button class="button-operator--clear" onclick="clearBox()">C</button>
+                    <button class="button-operator--add" onclick="addInput('+')">+</button>
+                    <button class="button-operator--subtract" onclick="addInput('-')">-</button>
+                    <button class="button-operator--multiply" onclick="addInput('*')">*</button>
+                    <button class="button-operator--devide" onclick="addInput('/')">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="mycalc.js"></script>
+</body>
+</html>
