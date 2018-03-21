@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Just A Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+         <div class="containner">
+            <div class="calculator-warpper">
+                <div class="calculator-display">
+                   <div class="calculator-display__warpper">
+                        <input type="text" id="input-box" class="calculator-display__input" v-model="calcData">
+                    </div>
+                </div>
+                <div class="calculator-button">
+                    <div class="calculator-button__number">
+                        <button class="button-number--seven" @click="addInput('7')">7</button>
+                        <button class="button-number--eight" @click="addInput('8')">8</button>
+                        <button class="button-number--nine" @click="addInput('9')">9</button>
+                        <button class="button-number--four" @click="addInput('4')">4</button>
+                        <button class="button-number--five" @click="addInput('5')">5</button>
+                        <button class="button-number--six" @click="addInput('6')">6</button>
+                        <button class="button-number--one" @click="addInput('1')">1</button>
+                        <button class="button-number--two" @click="addInput('2')">2</button>
+                        <button class="button-number--three" @click="addInput('3')">3</button>
+                        <button class="button-number--zero" @click="addInput('0')">0</button>
+                        <button class="button-number--dot" @click="addInput('.')">.</button>
+                        <button class="button-number--equal" @click="compute">=</button>
+                    </div>
+                    <div class="calculator-button__operator">
+                        <button class="button-operator--clear" @click="clearBox">C</button>
+                        <button class="button-operator--add" @click="addInput('+')">+</button>
+                        <button class="button-operator--subtract" @click="addInput('-')">-</button>
+                        <button class="button-operator--multiply" @click="addInput('*')">*</button>
+                        <button class="button-operator--devide" @click="addInput('/')">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="vue.js"></script>
+    <script src="mycalc-vue.js"></script>
+</body>
+</html>
